@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/editsaveLinearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Switch
+            android:id="@+id/switchEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:minHeight="48dp"
+            android:text="@string/switch_edit_txt"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/saveActivityButton"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="20dp"
+            android:text="@string/save_workoutbtn_txt" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/menuLinearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/imageButtonWorkoutList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/picture_of_weight"
+            android:src="@drawable/weight2"
+            tools:ignore="RedundantDescriptionCheck,SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/imageButtonLog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/picture_of_log"
+            android:src="@drawable/woodlog"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/imageButtonSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/settings"
+            tools:ignore="SpeakableTextPresentCheck"
+            android:contentDescription="@string/setting" />
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:id="@+id/scrollViewWorkouts"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@id/menuLinearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editsaveLinearLayout"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context=".MainActivity">
+
+            <TextView
+                android:id="@+id/textView_PlateTrack"
+                android:layout_width="121dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:text="@string/barbell_plate_track_txt"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView_Workout_Instruct" />
+
+            <TextView
+                android:id="@+id/textView_45pound"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/weight_track_45"
+                app:layout_constraintStart_toEndOf="@+id/textView_55Pound"
+                app:layout_constraintTop_toBottomOf="@+id/textView_PlateTrack" />
+
+            <TextView
+                android:id="@+id/textView_35Pound"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/weight_track_35"
+                app:layout_constraintStart_toStartOf="@+id/textView_55Pound"
+                app:layout_constraintTop_toBottomOf="@+id/textView_55Pound" />
+
+            <TextView
+                android:id="@+id/textView_55Pound"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/weight_track_55"
+                app:layout_constraintStart_toStartOf="@+id/textView_PlateTrack"
+                app:layout_constraintTop_toBottomOf="@+id/textView_PlateTrack" />
+
+            <TextView
+                android:id="@+id/textView_10Pound"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/weight_track_10"
+                app:layout_constraintStart_toStartOf="@+id/textView_35Pound"
+                app:layout_constraintTop_toBottomOf="@+id/textView_35Pound" />
+
+            <TextView
+                android:id="@+id/textView_5Pound"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/weight_track_5"
+                app:layout_constraintStart_toEndOf="@+id/textView_10Pound"
+                app:layout_constraintTop_toBottomOf="@+id/textView_25Pound" />
+
+            <TextView
+                android:id="@+id/textView_25Pound"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/weight_track_25"
+                app:layout_constraintStart_toEndOf="@+id/textView_35Pound"
+                app:layout_constraintTop_toBottomOf="@+id/textView_45pound" />
+
+            <TextView
+                android:id="@+id/textView_ORM_Header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                android:text="@string/orm_instructions"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/workoutTypeSpinner" />
+
+            <EditText
+                android:id="@+id/editTxtWorkoutName"
+                android:layout_width="151dp"
+                android:layout_height="49dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="@string/workout_name"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:textColorHint="#757575"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <CheckBox
+                android:id="@+id/barbellCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/toggle_barbell_txt"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/editTxtWorkoutName"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Spinner
+                android:id="@+id/workoutTypeSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTxtWorkoutName"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Spinner
+                android:id="@+id/oneRepMaxSpinner"
+                android:layout_width="121dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="32dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView_Workout_Instruct"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/textView_Rep_To_Complete"
+                android:layout_width="62dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/reps_to_complete_txt"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/oneRepMaxSpinner" />
+
+            <EditText
+                android:id="@+id/editTxtReps"
+                android:layout_width="79dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="@string/reps_orm_calc"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:textColorHint="#757575"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView_ORM_Header" />
+
+            <EditText
+                android:id="@+id/editTextWeight"
+                android:layout_width="76dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="50dp"
+                android:ems="10"
+                android:hint="@string/weight_orm_calc"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:textColorHint="#757575"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView_ORM_Header" />
+
+            <TextView
+                android:id="@+id/textView_ORM_Calculation"
+                android:layout_width="89dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="@string/one_rep_max_calculation"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.636"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTxtReps" />
+
+            <TextView
+                android:id="@+id/textView_ORM_Calculation_Fill"
+                android:layout_width="50dp"
+                android:layout_height="43dp"
+                android:layout_marginTop="12dp"
+                android:text="@string/empty_txt"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.875"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTxtReps" />
+
+            <TextView
+                android:id="@+id/textView_Workout_Instruct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_marginTop="15dp"
+                android:text="@string/workout_instructions_txt"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView_ORM_Calculation" />
+
+            <Button
+                android:id="@+id/logworkoutButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="175dp"
+                android:text="@string/log_completed_workoutbtn_txt"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView_Workout_Instruct" />
+
+            <Button
+                android:id="@+id/button_Calc_ORM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/calculate_ormbtn_txt"
+                app:layout_constraintEnd_toStartOf="@+id/textView_ORM_Calculation"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView_ORM_Calculation" />
+
+            <TextView
+                android:id="@+id/text_view_reps_needed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/default_0"
+                app:layout_constraintEnd_toEndOf="@+id/textView_Rep_To_Complete"
+                app:layout_constraintStart_toStartOf="@+id/textView_Rep_To_Complete"
+                app:layout_constraintTop_toBottomOf="@+id/textView_Rep_To_Complete" />
+
+            <TextView
+                android:id="@+id/TextView_Weight_Header"
+                android:layout_width="74dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/weight_to_complete"
+                app:layout_constraintStart_toEndOf="@+id/textView_Rep_To_Complete"
+                app:layout_constraintTop_toTopOf="@+id/textView_Rep_To_Complete" />
+
+            <TextView
+                android:id="@+id/textview_weight_to_complete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/default_0"
+                app:layout_constraintEnd_toEndOf="@+id/TextView_Weight_Header"
+                app:layout_constraintStart_toEndOf="@+id/textView_Rep_To_Complete"
+                app:layout_constraintTop_toBottomOf="@+id/TextView_Weight_Header" />
+
+            <TextView
+                android:id="@+id/textViewSpinnerPercentHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/select_one_rep_max_header"
+                app:layout_constraintBottom_toTopOf="@+id/oneRepMaxSpinner"
+                app:layout_constraintEnd_toEndOf="@+id/oneRepMaxSpinner"
+                app:layout_constraintStart_toStartOf="@+id/oneRepMaxSpinner" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,118 @@
+<resources>
+    <string name="app_name">Weight 4 it</string>
+    <string name="edit_workoutswitch">Edit Workout</string>
+    <string name="barbell_plate_track_txt">Barbell Plate Track</string>
+    <string name="weight_track_45">45#</string>
+    <string name="weight_track_35">35#</string>
+    <string name="weight_track_55">55#</string>
+    <string name="weight_track_10">10#</string>
+    <string name="weight_track_5">5#</string>
+    <string name="weight_track_25">25#</string>
+    <string name="orm_instructions">Please Enter Required Reps and Weight(pounds) for One Rep Max Calculation (Under 10 reps is Optimal)</string>
+    <string name="workout_name">Workout Name</string>
+    <string name="toggle_barbell_txt">Select if Workout\nRequires Barbell</string>
+    <string name="reps_to_complete_txt">Reps to Complete</string>
+    <string name="reps_orm_calc">Reps</string>
+    <string name="weight_orm_calc">Weight</string>
+    <string name="save_workoutbtn_txt">Save</string>
+    <string name="one_rep_max_calculation">One Rep Max Calculation:</string>
+    <string name="workout_instructions_txt">After Saving an Exercise, Select the One Rep Max % dropdown to complete a workout. Once the
+       Percentage is selected the Reps, Weight, and Barbell Plate Tool will display a workout
+        to complete.\n\nIf the workout requires a barbell, a tool will be displayed to calculate how many of each plate needs to go onto a standard 45 Pound bar to reach
+        the desired weight. </string>
+    <string name="log_completed_workoutbtn_txt">Log Completed Workout</string>
+    <string name="calculate_ormbtn_txt">Calculate</string>
+    <string name="cancelbtn_calendartxt">cancel</string>
+    <string name="log_datebtn_calendartxt">Log Date</string>
+    <string name="picture_of_log">picture of Log</string>
+    <string name="setting">Settings</string>
+    <string name="picture_of_weight">picture of weight</string>
+    <string name="textEdit_DefaultBar">45</string>
+    <string name="textEditHint_DefaultPlate">10</string>
+    <string name="textView_workout_sort_by">workout sort by</string>
+    <string name="radiobtn_lift_name">Lift Name</string>
+    <string name="radioBtn_max_weight">Max Weight</string>
+    <string name="radioBtn_ascending">Ascending</string>
+    <string name="textView_workout_sort_order">Workout Sort Order</string>
+    <string name="radioBtn_descending">Descending</string>
+    <string name="textView_PlateTrackerInstruct">Barbell Plate Tracker: Enter weights owned for \npersonalized weight calculations</string>
+    <string name="btn_editText">Edit</string>
+    <string name="saveBtn_txt">Save</string>
+    <string name="textView_barbell_weight_header">Barbell Weight:</string>
+    <string-array name="workout_type_array">
+        <item>Select Workout Type</item>
+        <item>Compound</item>
+        <item>Chest</item>
+        <item>Legs</item>
+        <item>Back</item>
+        <item>Arms</item>
+    </string-array>
+    <string-array name="workout_reps_array">
+        <item>Select%</item>
+        <item>100%</item>
+        <item>94%</item>
+        <item>89%</item>
+        <item>86%</item>
+        <item>81%</item>
+        <item>75%</item>
+        <item>70%</item>
+        <item>65%</item>
+        <item>60%</item>
+        <item>55%</item>
+        <item>50%</item>
+    </string-array>
+    <string-array name="workout_reps_count_array">
+        <item>0</item>
+        <item>1</item>
+        <item>3</item>
+        <item>5</item>
+        <item>6</item>
+        <item>8</item>
+        <item>10</item>
+        <item>13</item>
+        <item>16</item>
+        <item>20</item>
+        <item>25</item>
+        <item>30</item>
+    </string-array>
+    <string name="title_activity_log_list">LogListActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="empty_txt" />
+    <string name="edit_switch_txt">Edit</string>
+    <string name="switch_edit_txt">Edit:</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="default_0">0</string>
+    <string name="weight_to_complete">Weight to Complete</string>
+    <string name="select_one_rep_max_header">Select One Rep Max %</string>
+    <string name="log_lift_name">Log Lift Name</string>
+    <string name="log_date">Log Date</string>
+    <string name="log_sort_by">Log Sort By</string>
+    <string name="log_sort_order">Log Sort Order</string>
+    <string name="delete_logged_workout">Delete Logged Workout</string>
+    <string name="settings">Settings</string>
+    <string name="workout">workout</string>
+    <string name="log_workout">Log Workout</string>
+    <string name="string_delete_logged_workout">Delete Logged Workout</string>
+    <string name="log_button">log button</string>
+    <string name="scroll_and_delete_only_header">Scroll and Delete Only</string>
+    <string name="workout_type">Workout Type</string>
+    <string name="one_rep_max">One Rep Max</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="workout_name_log">Workout Name</string>
+    <string name="workout_type_log">Workout Type</string>
+    <string name="workout_weight_log">Workout Weight</string>
+    <string name="workout_reps_log">Workout Reps</string>
+    <string name="workout_date_log">Workout Date</string>
+    <string name="delete_log">Delete</string>
+    <string name="log_date_button">Log Date</string>
+    <string name="log_date_btn_label">Log Date</string>
+</resources>

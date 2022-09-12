@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textWorkoutName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/workout_name_log" />
+
+        <TextView
+            android:id="@+id/textWorkoutType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_toStartOf="@id/buttonDeleteLog"
+            android:layout_toEndOf="@id/textWorkoutName"
+            android:text="@string/workout_type_log" />
+
+        <TextView
+            android:id="@+id/textWorkoutWeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textWorkoutType"
+            android:layout_alignStart="@id/textWorkoutType"
+            android:layout_marginTop="5dp"
+            android:layout_toStartOf="@id/buttonDeleteLog"
+            android:layout_toEndOf="@id/textWorkoutReps"
+            android:text="@string/workout_weight_log" />
+
+        <TextView
+            android:id="@+id/textWorkoutReps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textWorkoutType"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/workout_reps_log" />
+
+        <TextView
+            android:id="@+id/textWorkoutDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textWorkoutReps"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_toStartOf="@id/buttonDeleteLog"
+            android:text="@string/workout_date_log" />
+
+        <Button
+            android:id="@+id/buttonDeleteLog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textWorkoutName"
+            android:layout_alignBottom="@+id/textWorkoutDate"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/system_transparent"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:text="@string/delete_log"
+            android:textColor="@color/black"
+            android:visibility="visible"/>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
